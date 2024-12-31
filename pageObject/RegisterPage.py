@@ -14,8 +14,7 @@ class RegisterPage:
     empStaRadioBtn_id = "inlineRadio1"
     dob_name = "bday"
     submitBtn_className = "btn.btn-success"
-    # success_className = "alert.alert-success.alert-dismissible"
-
+    
     def __init__(self,driver):
         self.driver = driver
 
@@ -50,11 +49,3 @@ class RegisterPage:
 
     def setSubmitBtn(self):
         self.driver.find_element(By.CLASS_NAME,self.submitBtn_className).click()
-
-    # def setSuccessMsg(self):
-    #     actTitle = self.driver.find_element(By.CLASS_NAME,"alert.alert-success.alert-dismissible").getText()
-    #     expTitle = "Success! The Form has been submitted successfully!."
-    #     if actTitle == expTitle:
-    #         assert True
-    #     else:
-    #         assert False
