@@ -31,11 +31,5 @@ class Test_RegisterPage:
         self.obj_registerPage.setEmpStaRadioBtn()
         self.obj_registerPage.setDob(self.dob)
         self.obj_registerPage.setSubmitBtn()
-        # actTitle = self.driver.find_element(By.CLASS_NAME, "close").getText()
-        # expTitle = "Success! The Form has been submitted successfully!."
-        # if actTitle == expTitle:
-        #     assert True
-        # else:
-        #     assert False
-        # self.obj_registerPage.setSuccessMsg()
+        
         time.sleep(3)
