@@ -43,7 +43,7 @@ class BuyProducts:
 
     def setCountry(self,country):
         self.driver.find_element(By.XPATH, self.country_xpath).clear()
-        self.driver.find_element(By.XPATH, self.country_xpath).send_keys = country
+        self.driver.find_element(By.XPATH, self.country_xpath).send_keys(country)
 
     def setCheckBox(self):
         self.driver.find_element(By.XPATH, self.checkbox_xpath).click()
