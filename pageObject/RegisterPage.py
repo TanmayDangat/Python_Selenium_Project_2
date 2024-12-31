@@ -20,15 +20,15 @@ class RegisterPage:
 
     def setName(self,name):
         self.driver.find_element(By.NAME,self.name_name).clear()
-        self.driver.find_element(By.NAME,self.name_name).send_keys = name
+        self.driver.find_element(By.NAME,self.name_name).send_keys(name)
 
     def setEmail(self,email):
         self.driver.find_element(By.NAME,self.email_name).clear()
-        self.driver.find_element(By.NAME,self.email_name).send_keys = email
+        self.driver.find_element(By.NAME,self.email_name).send_keys(email)
 
     def setPassword(self,password):
         self.driver.find_element(By.ID,self.password_id).clear()
-        self.driver.find_element(By.ID,self.password_id).send_keys = password
+        self.driver.find_element(By.ID,self.password_id).send_keys(password)
 
     def setCheckBox(self):
         self.driver.find_element(By.ID,self.checkBox_id).click()
@@ -45,7 +45,7 @@ class RegisterPage:
 
     def setDob(self,dob):
         self.driver.find_element(By.NAME,self.dob_name).clear()
-        self.driver.find_element(By.NAME,self.dob_name).send_keys = dob
+        self.driver.find_element(By.NAME,self.dob_name).send_keys(dob)
 
     def setSubmitBtn(self):
         self.driver.find_element(By.CLASS_NAME,self.submitBtn_className).click()
